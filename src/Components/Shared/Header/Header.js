@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import logoImg from '../../../Images/logo.svg';
+import Navigation from '../Navigation/Navigation';
 const Header = () => {
     return (
         <header>
@@ -33,7 +34,9 @@ const Header = () => {
                             <Col md={3} sm={6}>
                                 <img className="w-25" src={logoImg} alt="" />
                             </Col>
-                            <Col md={9} sm={6}></Col>
+                            <Col md={9} sm={6}>
+                                <Navigation></Navigation>
+                            </Col>
                         </Row>
                     </Container>
                     
